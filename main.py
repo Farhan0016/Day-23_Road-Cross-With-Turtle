@@ -7,6 +7,7 @@
 
 from turtle import Screen
 from time import sleep
+
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
@@ -42,8 +43,5 @@ while is_game_on:
         player.goto_start()
         car_manager.level_up()
         scoreboard.next_level()
-##    if player.ycor() > 280:
-##        player.reset()
-##        scoreboard.next_level()
 
 screen.exitonclick()
